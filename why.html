@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottie Animation Example</title>
+    <style>
+        #lottie {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="lottie"></div>
+
+    <!-- Підключення бібліотеки Lottie через CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+    <script>
+        // Ініціалізація Lottie анімації
+        const animation = lottie.loadAnimation({
+            container: document.getElementById('lottie'), // контейнер для анімації
+            renderer: 'svg',
+            loop: true, // зациклена анімація
+            autoplay: true, // автоматичний старт
+            path: 'https://assets2.lottiefiles.com/packages/lf20_ydo1amjm.json' // шлях до файлу з анімацією
+        });
+    </script>
+</body>
+
+</html>
